@@ -226,7 +226,8 @@ body, html {
 }
 
 .content_fotos_azules{
-	margin: 250px;
+	margin-top: 300px !important;
+	margin-bottom: 300px !important;
 
 }
 
