@@ -51,12 +51,12 @@
                   <p class="text-left texto_refuerzo">"Our principle as a company is transparency. It is important to know who you partner up with when doing business. We want partners, not clients."</p>
                 </div>
               </div>
-              <div class="row cta_amarillo" style="margin-bottom: 0px;">
+               <div class="row cta_amarillo">
                 <div class="button-group large-4 medium-6 small-10 stacked-for-small stacked-for-medium">
-                  <a href="" class="button boton_amarillo expanded" style="margin-right: 10px; margin-bottom: 10px;">For Shippers</a>
-                  <a href="" class="button boton_amarillo expanded" style="margin-right: 10px; margin-bottom: 10px;">For Carriers</a>
-            </div>
-          </div>
+                  <a href="{% url 'shippers'%}" class="button boton_amarillo expanded" style="margin-right: 10px; margin-bottom: 10px;">For Shippers</a>
+                  <a href="{% url 'carriers'%}" class="button boton_amarillo expanded" style="margin-right: 10px; margin-bottom: 10px;">For Carriers</a>
+                  </div>
+              </div>
           <!--Bloque de Beneficios-->
           <div class="row column expanded members_team">
             <div class="row">
@@ -99,8 +99,8 @@
               </div>
               <div class="row">
                 <div class="button-group large-4 medium-6 small-10 large-centered small-centered stacked-for-small stacked-for-medium">
-                  <a href="" class="button expanded float-center boton_cierre" style="margin-right: 10px;">For Shippers</a>
-                  <a href="" class="button expanded float-center boton_cierre">For Carriers</a>
+                  <a href="{% url 'shippers'%}" class="button expanded float-center boton_cierre" style="margin-right: 10px;">For Shippers</a>
+                  <a href="{% url 'carriers'%}" class="button expanded float-center boton_cierre">For Carriers</a>
                 </div>
                 </div>
               </div>
