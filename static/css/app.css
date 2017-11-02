@@ -88,8 +88,8 @@ body, html {
 }
 
 .foto_principal{
-	background-image: url("img/foto_carriers.png") !important;
-	background-position: center top !important;
+	background-image: url("img/foto_carriers1.png") !important;
+	background-position: center bottom !important;
 	background-repeat: no-repeat!important;
 	background-size: cover;
 	padding: 0px !important;
