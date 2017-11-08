@@ -4016,6 +4016,10 @@ a.thumbnail {
     float: none;
     clear: both; }
 
+.button-group .header-button {
+  float: left !important;
+}
+
 .small-uncentered,
 .small-push-0,
 .small-pull-0 {
