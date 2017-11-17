@@ -1356,7 +1356,8 @@ select {
           border: 1px solid #5da423;
           color: #5da423; }
     .button.hollow.warning {
-      border: 1px solid #ffae00;
+      border: none;
+      background: #2C475C;
       color: #ffae00; }
       .button.hollow.warning:hover, .button.hollow.warning:focus {
         border-color: #805700;
@@ -1827,7 +1828,8 @@ a.button:hover, a.button:focus {
   [data-whatinput='mouse'] .menu li {
     outline: 0; }
   .menu a,
-  .menu .button {
+  .menu .button,
+  .menu p{
     line-height: 1;
     text-decoration: none;
     display: block;
@@ -4013,6 +4015,10 @@ a.thumbnail {
   .small-centered, .small-centered:last-child:not(:first-child) {
     float: none;
     clear: both; }
+
+.button-group .header-button {
+  float: left !important;
+}
 
 .small-uncentered,
 .small-push-0,
