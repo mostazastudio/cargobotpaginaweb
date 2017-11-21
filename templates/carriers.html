@@ -60,16 +60,23 @@ src="https://www.facebook.com/tr?id=499239487118466&ev=PageView
     <!--Este es el menu con un clic que muestra una barra de menu secundaria, la hice creando un top-bar y dentro de ese top-bar metiendo un title-bar que es el que siempre esconde. Importante mencionar que en ese title-bar deje vacia la opcion de "data-hide-for" para que la barra que habilita a la otra barra siempre se muestre. Tambien manejo top-bar-left y top-bar-right. Importante revisar los menus verticales y solo horizontales para large y mediums screens-->
       <div class="top-bar" id="main_barra">
         <div class="top-bar-left">
-          <div class="title-bar" data-responsive-toggle="second_barra" data-hide-for="" id="menu_hamburguer">
-            <div class="" style="margin-right: 30px; padding: 0px;">
-              <!--Add homepage link to logo-->
-              <a href="http://cargobot.io/">
-              <img src="{% static 'css/img/logo-c.png'%}" alt="CargoBot">
-              </a>
-            </div>  
+          <!--<div class="title-bar" data-responsive-toggle="second_barra" data-hide-for="" id="menu_hamburguer">
+             
             <button class="menu-icon" type="button" data-toggle="second_barra"></button>
             <div class="title-bar-title texto_main_barra" id="texto_menu">Menu</div>
-          </div>
+          </div>-->
+          <div class="menu-centered" id="second_barra">
+          <ul class="menu vertical medium-horizontal large-horizontal">
+            <li style="margin-right: 30px; padding: 0px;"><a href="http://cargobot.io/"><img src="{% static 'css/img/logo-c.png'%}" alt="CargoBot"></a></li>
+            <li style="padding-top: 20px;"><a href="{% url 'Home'%}" class="texto_main_barra"><span class="icon-home icon_menu"></span> Home</a></li>
+            <li style="padding-top: 20px;"><a href="{% url 'shippers'%}" class="texto_main_barra"><span class="icon-shippers icon_menu"></span>For Shippers</a></li>
+            <li style="padding-top: 20px;"><a href="{% url 'carriers'%}" class="texto_main_barra"><span class="icon-carriers icon_menu" style="font-weight: bolder;"></span>For Carriers</a></li>
+            <li style="padding-top: 20px;"><a href="{% url 'story'%}" class="texto_main_barra"><span class="icon-story icon_menu"></span>Our Story</a></li>
+            <li style="padding-top: 20px;"><a href="{% url 'faq'%}" class="texto_main_barra"><span class="icon-faq icon_menu"></span>FAQ</a></li>
+            <li style="padding-top: 20px;"><a href="{% url 'team'%}" class="texto_main_barra"><span class="icon-team icon_menu"></span>Team</a></li>
+            <!--<li><a href="" class="texto_main_barra"><span class="icon-blog icon_menu"></span>Community</a></li>-->
+          </ul>
+         </div>
         </div>
         <div class="top-bar-right">
           <ul class="menu vertical medium-horizontal large-horizontal">
@@ -78,17 +85,6 @@ src="https://www.facebook.com/tr?id=499239487118466&ev=PageView
           </ul>
         </div>
       </div>
-        <div class="menu-centered" id="second_barra">
-          <ul class="menu vertical medium-horizontal large-horizontal">
-            <li><a href="{% url 'Home'%}" class="texto_main_barra"><span class="icon-home icon_menu"></span> Home</a></li>
-            <li><a href="{% url 'shippers'%}" class="texto_main_barra"><span class="icon-shippers icon_menu"></span>For Shippers</a></li>
-            <li><a href="{% url 'carriers'%}" class="texto_main_barra"><span class="icon-carriers icon_menu" style="font-weight: bolder;"></span>For Carriers</a></li>
-            <li><a href="{% url 'story'%}" class="texto_main_barra"><span class="icon-story icon_menu"></span>Our Story</a></li>
-            <li><a href="{% url 'faq'%}" class="texto_main_barra"><span class="icon-faq icon_menu"></span>FAQ</a></li>
-            <li><a href="{% url 'team'%}" class="texto_main_barra"><span class="icon-team icon_menu"></span>Team</a></li>
-            <!--<li><a href="" class="texto_main_barra"><span class="icon-blog icon_menu"></span>Community</a></li>-->
-          </ul>
-         </div>
         <!--Aca empieza como tal el contneido de cada pagina--> 
           <div class="row column expanded foto_principal">
             <div class="row column expanded filtro_negro">
