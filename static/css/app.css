@@ -5,6 +5,10 @@ body, html {
 
 }
 
+ul {
+	background-color: #282828  !important;
+}
+
 #main_barra{
 	background-color: #282828 !important;
 	padding: 0px !important;
